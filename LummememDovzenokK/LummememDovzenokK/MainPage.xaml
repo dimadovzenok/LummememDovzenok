@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LummememDovzenokK.MainPage">
+    <StackLayout BackgroundColor="#75bbfd">
+        <StackLayout x:Name="snowman" BackgroundColor="#75bbfd" Spacing="0">
+            <Frame x:Name="head" 
+               BackgroundColor="White" 
+               CornerRadius="60"
+               Margin="120,0"
+               Padding="60">
+            </Frame>
+            <Frame x:Name="body" 
+               BackgroundColor="White" 
+               CornerRadius="80"
+               Margin="100,0"
+               Padding="80"
+               >
+            </Frame>
+            <Frame x:Name="body1" 
+               BackgroundColor="White" 
+               CornerRadius="100"
+               Margin="90,0"
+               Padding="90">
+            </Frame>
+        </StackLayout>
+
+        <StackLayout x:Name="actions" BackgroundColor="#75bbfd">
+            <Slider x:Name="SliderOpacity" 
+                    Minimum="0" 
+                    Maximum="100" 
+                    Value="0" 
+                    BackgroundColor="#75bbfd"
+                    ValueChanged="SliderOpacity_ValueChanged"></Slider>
+            <Label x:Name="SliderLabel"
+                   Text=""></Label>
+            <Button x:Name="Btn"
+                    Text="Sulama" 
+                    Clicked="Btn_Clicked"
+                    BackgroundColor="#fd7577"></Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
